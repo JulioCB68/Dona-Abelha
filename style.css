@@ -1,0 +1,473 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    /*======================== HELPERS ========================
+======================== BG COLORS ========================*/
+    
+    .bg-gradient {
+        background: linear-gradient(to right, #20262f, #4a546e);
+    }
+    
+    .bg-black {
+        background-color: #130400;
+    }
+    
+    .bg-white {
+        background-color: #fff;
+    }
+    
+    .bg-dark-blue {
+        background-color: #303C58;
+    }
+    
+    .bg-white-blue {
+        background-color: #4a546e;
+    }
+    
+    .bg-button {
+        background-color: #20262f;
+    }
+    
+    .bg-teams {
+        background: linear-gradient(rgba(10, 50, 70, 70), #f5f5f5);
+    }
+    /*====================================== HEADER ======================================*/
+    
+    .logo-nav {
+        width: 35px;
+    }
+    
+    .icon-nav {
+        width: 25px;
+        text-decoration: none;
+        text-decoration-color: none;
+    }
+    /*====================================== HOME ======================================*/
+    
+    .banner {
+        background: url(../assets/cake-1971552_1920.jpg);
+        /* background-attachment: fixed; */
+        background-position: center left;
+        background-repeat: no-repeat;
+        height: 92.5vh;
+    }
+    
+    .banner h1 {
+        text-align: center;
+        margin: 50% 0 0 0;
+        text-transform: uppercase;
+        color: #F1A324;
+    }
+    
+    .banner p {
+        text-align: center;
+        margin: 15% 0 0 0;
+        color: #F1A324;
+        font-weight: bold;
+    }
+    
+    .banner button {
+        padding: 0.3%;
+        width: 60%;
+        height: 5vh;
+        margin: 40% auto;
+        border: none;
+        background: #F1A324;
+        border-radius: 10px;
+        color: white;
+    }
+    /*====================================== ENTERPRISES ======================================*/
+    
+    .owl-carousel .item {
+        width: 150px;
+        margin: 25% auto;
+        height: 150px;
+    }
+    
+    .icon-card {
+        margin: 15% auto 0 auto;
+        width: 80px;
+        height: 80px;
+    }
+    
+    .card {
+        width: 205px;
+        margin-left: -15%;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+    }
+    
+    .card p {
+        text-align: center;
+        margin: 15%;
+    }
+    /*====================================== ABOUT ======================================*/
+    
+    .about {
+        margin: 0 5% 30% 5%;
+    }
+    
+    .about h1 {
+        color: #C58C5E;
+        margin: 30% 0 10% 0;
+        text-align: center;
+        font-family: 'Alex Brush', cursive;
+        font-size: 4em;
+    }
+    
+    .about p {
+        margin: 0 0 10% 0;
+        text-align: center;
+    }
+    
+    .about-image {
+        margin: 5% 0;
+    }
+    /*====================================== SERVICES ======================================*/
+    
+    .services h1 {
+        color: #C58C5E;
+        margin: 0% 0 15% 0;
+        text-align: center;
+        font-family: 'Alex Brush', cursive;
+        font-size: 4em;
+    }
+    
+    .services p {
+        color: #C58C5E;
+        margin: 0% 0 15% 0;
+        text-align: center;
+    }
+    
+    .content {
+        max-width: 1024px;
+        width: 100%;
+        padding: 0 4%;
+        margin-bottom: 25%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card-services-two {
+        width: 100%;
+        max-width: 300px;
+        min-width: 200px;
+        height: 250px;
+        background-color: #f5f5f5;
+        margin: 7%;
+        border-radius: 10px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+        border: 2px solid rgba(7, 7, 7, 0.12);
+        font-size: 16px;
+        transition: all 0.3s ease;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .icon {
+        margin: 0 auto;
+        width: 100%;
+        height: 80px;
+        max-width: 80px;
+        border: 1px solid transparent;
+        background-image: linear-gradient(#f5f5f5, #f5f5f5), radial-gradient(circle at top left, #C58C5E, #F1A324);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #C58C5E;
+        transition: all 0.8s ease;
+        background-position: 0px;
+        background-size: 200px;
+    }
+    
+    .card-services-two .title {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        margin-top: 30px;
+        color: #F1A324;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+    
+    .card-services-two .text {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 13px;
+        text-align: center;
+        margin-top: 20px;
+        color: #C58C5E;
+        font-weight: 200;
+        letter-spacing: 2px;
+        opacity: 0;
+        max-height: 0;
+        transition: all 0.3s ease;
+    }
+    
+    .card-services-two:hover {
+        height: 320px;
+    }
+    
+    .card-services-two:hover .info {
+        height: 90%;
+    }
+    
+    .card-services-two:hover .text {
+        transition: all 0.3s ease;
+        opacity: 1;
+        max-height: 40px;
+    }
+    
+    .card-services-two:hover .icon {
+        background-position: -120px;
+        transition: all 0.3s ease;
+        color: #C58C5E;
+        border: linear-gradient(90deg, #C58C5E, #F1A324);
+    }
+    
+    .card-services-two:hover .icon i {
+        background: linear-gradient(90deg, #C58C5E, #F1A324);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 1;
+        transition: all 0.3s ease;
+    }
+    /*====================================== ORDER ======================================*/
+    
+    .order {
+        background: url(assets/cake-1850011_1920.jpg);
+        /* background-attachment: fixed; */
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+    
+    .order h1 {
+        text-align: center;
+        margin: 15% 0 0 0;
+        text-transform: uppercase;
+        color: #F1A324;
+    }
+    
+    .order p {
+        text-align: center;
+        margin: 15% 0 0 0;
+        color: #F1A324;
+        font-weight: bold;
+    }
+    
+    .order p:last-child {
+        text-align: center;
+        margin: 0 0 15% 0;
+        color: #F1A324;
+        font-weight: bold;
+    }
+    
+    .order button {
+        padding: 0.3%;
+        width: 60%;
+        height: 5vh;
+        margin: 20% auto;
+        border: none;
+        background: #F1A324;
+        border-radius: 10px;
+        color: white;
+    }
+    /*====================================== MENU RESTAURANT ======================================*/
+    /*====================================== ORDER ======================================*/
+    /*====================================== CAROUSEL ======================================*/
+    /*======================== WHATSAPP BUTTON ========================*/
+    
+    .order a {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        top: 65px;
+        right: 35px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 1px 1px 2px #888;
+        z-index: 1000;
+    }
+    
+    .icon-whats_app {
+        margin: 25% 0 0 3%;
+    }
+    /*====================================== FOOTER ======================================*/
+    
+    footer {
+        background: url(assets/cake-1850011_1920.jpg);
+        /* background-attachment: fixed; */
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        color: #FFFFFF;
+    }
+    /*======================== SMALL DEVICES - SMARTPHONES ========================*/
+    /*     
+@media screen and (min-width: 480px) {} */
+    /*@media screen and (min-width: 375px) {} */
+    /*======================== SMALL DEVICES - TABLETS ========================*/
+    /*     
+@media screen and (max-width: 767px) {} */
+    /* @media screen and (min-width: 768px) {} */
+    /*======================== MEDIUM DEVICES - TABLETS & DESKTOPS ========================*/
+    /* @media screen and (min-width: 960px) {} */
+    /*======================== LARGE DEVICES - WIDE SCREENS ========================*/
+    
+    @media screen and (min-width: 1280px) {
+        /*====================================== HOME ======================================*/
+        .banner {
+            background-attachment: fixed;
+            background-position: left top;
+            background-repeat: no-repeat;
+            height: 60vh;
+        }
+        .banner h1 {
+            margin: 1.5% 0 0 -32.5%;
+            font-size: 5em;
+        }
+        /* .banner p {
+            margin: 0% 0 0 -12.5%;
+            font-size: 1.25em;
+        } */
+        .banner p {
+            margin: 0 0 0 -38%;
+            font-size: 1.25em;
+            text-transform: uppercase;
+        }
+        /*====================================== ENTERPRISES ======================================*/
+        .owl-carousel .item {
+            height: 180px;
+            margin: 65% auto 25% auto;
+        }
+        /*====================================== ABOUT ======================================*/
+        .about {
+            margin: 10% 5% 7% 5%;
+        }
+        .about h1 {
+            margin: 15% 0 15% 0;
+            font-size: 8em;
+        }
+        .about p {
+            margin: 0 0 10% 0;
+        }
+        .about-image {
+            margin: 5% 0;
+            height: 26.5vh;
+        }
+        /*====================================== SERVICES ======================================*/
+        .services h1 {
+            margin: 0% 0 2% 0;
+            font-size: 8em;
+        }
+        .services p {
+            margin: 0% 0 0% 0;
+            font-size: 1.25em;
+        }
+        .card-services-two {
+            min-width: 400px;
+            margin: 15% 7% 20% 7%;
+        }
+        .card-services-two .title {
+            font-size: 1.25em;
+            letter-spacing: 10px;
+            transition: all 0.3s ease;
+        }
+        .card-services-two:hover {
+            height: 320px;
+        }
+        .card-services-two:hover .title {
+            font-weight: normal;
+            letter-spacing: 4px;
+            transition: all 0.3s ease;
+        }
+        .card-services-two:hover .text {
+            font-weight: bold;
+            transition: all 0.6s ease;
+        }
+        .card-services-two:hover .icon {
+            border: linear-gradient(90deg, #F1A324, #F1A324);
+        }
+        /*====================================== ORDER ======================================*/
+        .order {
+            background-attachment: fixed;
+            background-position: bottom top;
+            height: 60vh;
+        }
+        .order h1 {
+            margin: 10% 0 0 0;
+            font-size: 3.5em;
+        }
+        .order p {
+            margin: 2.5% 0 0 0;
+            font-size: 16px;
+        }
+        .order button {
+            width: 30%;
+            margin: 5% 30%;
+            transition: all 0.6s ease;
+        }
+        .order button:hover {
+            width: 33%;
+            height: 6vh;
+            transition: all 0.3s ease;
+        }
+        /*======================== ORDER WHATSAPP BUTTON ========================*/
+        .order a {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            top: 61px;
+            right: 365px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 1px 1px 2px #888;
+            z-index: 1000;
+        }
+        .icon-whats_app {
+            margin: 25% 0 0 3%;
+        }
+        /*====================================== FOOTER ======================================*/
+    }
+    
+    @media screen and (max-width: 767px) {
+        .content {
+            flex-direction: column;
+            margin-bottom: 15%;
+        }
+    }
